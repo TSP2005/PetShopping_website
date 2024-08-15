@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+  <script src="https://kit.fontawesome.com/db1fd6406d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="title">
+    <img src="static/images/i1.jpeg">
+    <input type="text" id="search" placeholder="searchhere">
+    <button type="submit" id="submit_1"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <button type="submit" id="account"><i class="fa-solid fa-user"></i></button>
+    <button type="submit" id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+    <button type="submit" id="whistlist"><i class="fa-solid fa-heart"></i></button>
+  </div>
+  <div id="user_choices">
+    <button class="choices" value="Beager" id="category_pets">Beager</button>
+    <button class="choices" value="Boxer" id="category_pets">Boxer</button>
+    <button class="choices" value="Bulldog" id="category_pets">Bulldog</button>
+    <button class="choices" value="Dachshund" id="category_pets">Dachshund</button>
+    <button class="choices" value="French Bulldog" id="category_pets">French Bulldog</button>
+    <button class="choices" value="German Shepherd" id="category_pets">German Shepherd</button>
+    <button class="choices" value="Golden Retriever" id="category_pets">Golden Retriever</button>
+    <button class="choices" value="Labrador Retriever" id="category_pets">Labrador Retriever</button>
+    <button class="choices" value="Poodle" id="category_pets">Poodle</button>
+    <button class="choices" value="Siberian Husky" id="category_pets">Siberian Husky</button>
+  </div>
+  <div id="pet_images"></div>
+  <div id="card-container">
+    <div id="cart_items"></div>
+    <div id="total_cost_view"></div>
+  </div>
+  <script src="{{ url_for('static', filename='home.js') }}"></script>
+</body>
+</html>
